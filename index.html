@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pokédex</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Pokédex</h1>
+    <p>Digite o nome ou o número de um Pokémon.</p>
+  </header>
+
+  <main>
+    <form id="form-busca" class="busca">
+      <label for="campo-nome" class="sr-only">Nome do Pokémon</label>
+      <input id="campo-nome" type="text" placeholder="ex.: pikachu" autocomplete="off">
+      <button type="submit">Buscar</button>
+      <button type="button" id="btn-aleatorio" class="secundario">Aleatório</button>
+    </form>
+
+    <section id="resultado" aria-live="polite"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
